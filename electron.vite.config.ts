@@ -15,11 +15,6 @@ export default defineConfig({
         '@renderer': resolve('src/renderer/src')
       }
     },
-    plugins: [react()],
-    build: {
-      rollupOptions: {
-        external: ['sqlite3']
-      }
-    }
+    plugins: [react()]
   }
 })
