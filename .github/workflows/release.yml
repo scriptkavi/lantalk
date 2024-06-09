@@ -40,7 +40,7 @@ jobs:
 
       - name: build-win
         if: matrix.os == 'windows-latest'
-        run: npm install sqlite3 --build-from-source --runtime=electron --target=28.2.0 --dist-url=https://electronjs.org/headers && npm run build:win
+        run: npm install sqlite3 --build-from-source --runtime=electron --target=28.2.0 --dist-url=https://electronjs.org/headers && npm run postinstall && npm run build:win
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
