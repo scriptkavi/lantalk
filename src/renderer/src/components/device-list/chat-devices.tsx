@@ -13,6 +13,10 @@ const ChatDevices: FC = () => {
   const [searchString, setSearchString] = useState('')
 
   useEffect(() => {
+    setDevicesList(chatDevices)
+  }, [chatDevices])
+
+  useEffect(() => {
     if (myAddress) {
       window.LanTalk.getChatDevices().then((res) => {
         const devices: DeviceType[] = res.map((device) => {
@@ -25,6 +29,8 @@ const ChatDevices: FC = () => {
             content: device.content
           }
         })
+        console.log('devices', devices)
+        console.log('setChatDevices', setChatDevices)
         if (setChatDevices) {
           setChatDevices([...devices])
         }
@@ -43,14 +49,14 @@ const ChatDevices: FC = () => {
   }, [searchString])
 
   const renderDevices: () => ReactNode[] = () => {
-    return devicesList.map((device) => {
+    return devicesList.map((device, index) => {
       return (
         <div
           className={cn(
             'px-2 h-12 border-b cursor-pointer flex items-center space-x-2 justify-between w-full',
             device.mac === selectedDevice?.mac ? ' bg-secondary' : ''
           )}
-          key={device.ip}
+          key={index}
           onClick={() => setSelectedDevice && setSelectedDevice(device)}
         >
           <div className="flex items-center space-x-2 max-w-[95%]">
