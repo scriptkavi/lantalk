@@ -2,7 +2,7 @@
 
 With LanTalk, you can chat with anyone who is connected on the same network via WIFI.
 
-![LanTalk](lantalk.png)
+![LanTalk](screenshots/lantalk.png)
 
 ## How to run
 
