@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { app, shell, BrowserWindow, ipcMain, dialog } from 'electron'
-// import { autoUpdater } from 'electron-updater'
 import { join } from 'node:path'
 import { electronApp, optimizer, is, platform } from '@electron-toolkit/utils'
 
@@ -30,7 +29,8 @@ function createWindow(): void {
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
-      sandbox: false
+      sandbox: false,
+      nodeIntegration: true
     }
   })
 
@@ -59,6 +59,7 @@ function createWindow(): void {
     // Open the DevTools.
     mainWindow.webContents.openDevTools()
   } else {
+    mainWindow.webContents.openDevTools()
     mainWindow.loadFile(join(__dirname, '../renderer/index.html'))
   }
 }

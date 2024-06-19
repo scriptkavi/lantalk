@@ -1,34 +1,36 @@
-# lantalk
+# LanTalk - Chat with peers on local network
 
-An Electron application with React and TypeScript
+With LanTalk, you can chat with anyone who is connected on the same network via WIFI.
 
-## Recommended IDE Setup
+![LanTalk](lantalk.png)
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+## How to run
 
-## Project Setup
+- npm install
+- npm run dev
 
-### Install
+## How to package
 
-```bash
-$ npm install
-```
+#### For Windows
 
-### Development
+- npm run build:win
 
-```bash
-$ npm run dev
-```
+#### For Mac
 
-### Build
+- npm run build:mac
 
-```bash
-# For windows
-$ npm run build:win
+#### For Linux
 
-# For macOS
-$ npm run build:mac
+- npm run build:linux
 
-# For Linux
-$ npm run build:linux
-```
+NOTE: This assumes `electron-packager` is installed globally
+
+## Author
+
+Sunny Sharma &lt;sunny@vedvyas.io&gt;
+
+Updated on: 19 June 2024
+
+## License
+
+MIT - see [LICENSE](LICENSE)
