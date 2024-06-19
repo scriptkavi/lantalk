@@ -29,6 +29,10 @@ NOTE: This assumes `electron-packager` is installed globally
 
 Sunny Sharma &lt;sunny@vedvyas.io&gt;
 
+### Follow me on
+- [LinkedIn](https://www.linkedin.com/in/sunnynk19/)
+- [Twitter](https://x.com/sunnynk19)
+
 Updated on: 19 June 2024
 
 ## License
