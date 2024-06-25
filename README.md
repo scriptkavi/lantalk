@@ -31,7 +31,7 @@ Sunny Sharma &lt;sunny@vedvyas.io&gt;
 
 ### Follow me on
 - [LinkedIn](https://www.linkedin.com/in/sunnynk19/)
-- [Twitter](https://x.com/sunnynk19)
+- [Twitter](https://x.com/scriptkavi)
 
 Updated on: 19 June 2024
 
